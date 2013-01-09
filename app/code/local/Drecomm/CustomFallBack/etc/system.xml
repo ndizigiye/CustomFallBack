@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <drecomm_costumfallback translate="label" module="drecomm_customfallback">
+            <class>separator-top</class>
+            <label>Custom design fallback</label>
+            <tab>general</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+<fields>
+                        <fallback translate="label">
+                            <label>Fallback configuration</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[
+<b>Instructions:</b><br />
+Separate theme names by a ",".<br />
+The first theme has the most priority and the last the less priority.
+Magento will look in these themes before looking in the theme you specified.
+]]></comment>
+                        </fallback>
+                    </fields>
+                </general>
+            </groups>
+        </drecomm_costumfallback>
+    </sections>
+</config>

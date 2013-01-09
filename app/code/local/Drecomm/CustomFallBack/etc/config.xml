@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Drecomm_CustomFallBack>
+            <version>0.0.1</version>
+        </Drecomm_CustomFallBack>
+    </modules>
+
+    <global>
+        <helpers>
+            <drecomm_customfallback>
+                <class>Drecomm_CustomFallBack_Helper</class>
+            </drecomm_customfallback>
+        </helpers>
+        <models>
+            <drecomm_customfallback>
+                <class>Drecomm_CustomFallBack_Model</class>
+            </drecomm_customfallback>
+            <core>
+                <rewrite>
+                    <design_package>Drecomm_CustomFallBack_Model_Design_Package</design_package>
+                </rewrite>
+            </core>
+        </models>
+    </global>
+        <adminhtml>
+            <acl>
+                <resources>
+                    <admin>
+                        <children>
+                            <system>
+                                <children>
+                                    <config>
+                                        <children>
+                                            <drecomm_costumfallback translate="title" module="drecomm_customfallback">
+                                                <title>Youtube API ACL</title>
+                                            </drecomm_costumfallback>
+                                        </children>
+                                    </config>
+                                </children>
+                            </system>
+                        </children>
+                    </admin>
+                </resources>
+            </acl>
+    </adminhtml>
+</config>
