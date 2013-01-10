@@ -17,7 +17,7 @@ class Drecomm_CustomFallback_Model_Design_Package extends Mage_Core_Model_Design
     protected function _fallback($file, array &$params, array $fallbackScheme = array(array())) {
 
         $fallback = trim(Mage::getStoreConfig('drecomm_costumfallback/general/fallback'));
-        $themes = split(',',$fallback);
+        $themes = explode(',',$fallback);
 
         if (!empty($themes)){
             foreach( $themes as $theme){
