@@ -18,11 +18,12 @@ class Drecomm_CustomFallback_Model_Design_Package extends Mage_Core_Model_Design
 
         $fallback = trim(Mage::getStoreConfig('drecomm_costumfallback/general/fallback'));
         $themes = explode(',',$fallback);
+        $themes_reserved = array_reverse($themes);
 
-        if (!empty($themes)){
-            foreach( $themes as $theme){
+        if (!empty($themes_reserved)){
+            foreach( $themes_reserved as $theme){
                 $custom = array('_theme' => $theme);
-                array_push($fallbackScheme ,$custom);
+                array_unshift($fallbackScheme ,$custom);
             }
         }
 

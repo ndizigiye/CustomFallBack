@@ -33,7 +33,7 @@
                                     <config>
                                         <children>
                                             <drecomm_costumfallback translate="title" module="drecomm_customfallback">
-                                                <title>Youtube API ACL</title>
+                                                <title>Custom Design FallBack</title>
                                             </drecomm_costumfallback>
                                         </children>
                                     </config>
